@@ -14,6 +14,30 @@
   color: white;
 }
 
-.countdown-date {
-  font-size: calc(20px + 2vmin);
+.content {
+  min-width: 275px;
+}
+
+.support {
+  color: #bfc0c2;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.countdown > *:not(:last-of-type) > .countdown__number:after {
+  content: ':';
+  position: absolute;;
+}
+
+.countdown__number {
+  font-family: 'Roboto Mono', monospace;
+  font-size: calc(24px + 2vmin);
+  margin: 0;
+}
+
+.countdown__title {
+  margin: 0;
 }
