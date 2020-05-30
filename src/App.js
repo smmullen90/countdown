@@ -6,7 +6,6 @@ import { inject, observer } from 'mobx-react';
 const App = inject('countdownStore')(observer((props) => {
   const { countdownStore } = props;
 
-  // debugger
   useEffect(() => {
     const interval = setInterval(countdownStore.calculate, 1000);
     return () => { debugger; clearInterval(interval)};
